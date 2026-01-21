@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Cyrillo | Desenvolvedor de Software</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="image/LOGO.png" type="image/png">
+
+    <!-- Fonte -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/LOGO.png">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Quem Sou</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Olá, eu sou Lucas Cyrillo</h1>
+            <p>Desenvolvedor de software | Transformando ideias em soluções digitais</p>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <h2>Quem Sou</h2>
+        <div class="about-content">
+        <div class="about-text">
+            <p>
+                Sou desenvolvedor de software com experiência em aplicações web e sistemas modernos.
+                Trabalho com foco em qualidade de código, boas práticas, arquitetura limpa e soluções
+                que geram valor real para negócios e usuários.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="image/me.png" alt="Foto de Lucas Cyrillo">
+        </div>
+    </div>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites e sistemas web modernos, responsivos e performáticos.</p>
+            </div>
+            <div class="card">
+                <h3>APIs & Backend</h3>
+                <p>Desenvolvimento de APIs seguras, escaláveis e bem documentadas.</p>
+            </div>
+            <div class="card">
+                <h3>Modernização de Sistemas</h3>
+                <p>Modernização de sistemas legados para novas tecnologias.</p>
+            </div>
+            <div class="card">
+                <h3>Sistemas Legados</h3>
+                <p>Manutenção e correção em sistemas legados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <img src="image/APIs-swagger.png" alt="Desenvolvimento de API de Recebimento">
+                <div class="portfolio-content">
+                    <h3>Solicitaçao Recebimento</h3>
+                    <p>Desenvolvimento da Api para gerenciamento de pagamentos da empresa </p>
+
+                    <div class="portfolio-badge">
+                        C#
+                    </div>
+
+                    <div class="portfolio-badge">
+                        ASP.NET
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="image/sistema-Web-rentalCars.png" alt="Aplicação de Gerenciamento de Projetos">
+                <div class="portfolio-content">
+                    <h3>Mieten - RentalCars</h3>
+                    <p>Plataforma online para empresa de aluguel de carros</p>
+                    <div class="portfolio-badge">
+                        C#
+                    </div>
+
+                    <div class="portfolio-badge">
+                        ASP.NET
+                    </div>
+
+                    <div class="portfolio-badge">
+                        Angular
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="image/Housez.png" alt="Aplicação para compra e venda de imóveis de luxo">
+                <div class="portfolio-content">
+                    <h3>Housez</h3>
+                    <p>Site online para compra e venda de imóveis</p>
+
+                    <div class="portfolio-badge">
+                        Angular
+                    </div>
+
+                    <div class="portfolio-badge">
+                        Node.Js
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p class="contact-subtitle">Vamos conversar sobre seu projeto?</p>
+
+        <div class="contact-container">
+
+            <!-- Ícones -->
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/lcyrillo" target="_blank" class="icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- <a href="https://www.instagram.com/SEU_INSTAGRAM" target="_blank" class="icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a> -->
+
+                <a href="https://wa.me/5511941425439" target="_blank" class="icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <a href="mailto:lucascyrillo@email.com" class="btn-email">
+                <i class="fas fa-envelope"></i>
+                Enviar e-mail
+            </a>
+
+            <!-- Formulário -->
+            <form id="contact-form" class="contact-form" style="display: none;">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar mensagem</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <footer>
+        © 2026 • Lucas Cyrillo • Todos os direitos reservados
+    </footer>
+
+
+    <script src="mail.js"></script>
+
+    <script>
+        emailjs.init("mIomV7JWKoJeh8Nj7");
+    </script>
+
+</body>
+</html>
