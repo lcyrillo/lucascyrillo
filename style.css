@@ -362,6 +362,14 @@ header {
     background: #25d366;
 }
 
+.icon.medium {
+    background: #000;
+}
+
+.icon.github {
+    background: #000;
+}
+
 .btn-email {
     display: flex;
     align-items: center;
